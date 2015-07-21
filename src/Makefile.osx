@@ -1,8 +1,10 @@
 CC = gcc
 # For universal binaries on Mac
-#CFLAGS = -O4 -fomit-frame-pointer -funroll-loops -DNDEBUG -std=gnu99
-LDFLAGS =  -lm -framework vecLib
-INCFLAGS = -I/System/Library/Frameworks/vecLib.framework/Headers/
+CFLAGS = -O4 -fomit-frame-pointer -funroll-loops -DNDEBUG -std=gnu99
+LDFLAGS =  -lm -framework Accelerate
+#INCFLAGS = -I/System/Library/Frameworks/vecLib.framework/Headers/
+INCFLAGS = -I/System/Library/Frameworks/Accelerate.framework/Headers/
+
 
 CFLAGS = -O3 -funroll-loops -DNDEBUG -std=gnu99 -Wall
 #CFLAGS = -Wall -g -DWARNINGS -std=gnu99 -pedantic -fstack-protector-all -D_FORTIFY_SOURCE=2
